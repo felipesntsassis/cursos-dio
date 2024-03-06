@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fieldsets</title>
+        <style>
+            .row {
+                margin: 5px;
+            }
+            label {
+                width: 100px;
+                text-align: right;
+                display: inline-block;
+                padding-right: 5px;
+            }
+
+            fieldset {
+                margin: 15px 0;
+                border-radius: 10px;
+                border-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Formulário de Cadastro</h1>
+        <form action="">
+
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="row">
+                    <label>Nome:</label><input name="name" type="text">
+                    <label>E-mail:</label><input name="email" type="email">
+                </div>
+                <div class="row">
+                    <label>Profissão:</label><input name="role" type="text">
+                    <label>Empresa:</label><input name="company" type="text">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+                <div class="row">
+                    <label>Endereço:</label><input name="address" type="text">
+                    <label>Número:</label><input name="number" type="number" style="width: 30px">
+                </div>
+                <div class="row">
+                    <label>Bairro:</label><input name="neighborhood" type="text">
+                </div>
+                <div class="row">
+                    <label>Cidade/UF:</label><input name="city_uf" type="text">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informações de Contato</legend>
+                <div class="row">
+                    <label>Celular:</label><input name="role" type="tel">
+                    <label>Whatsapp:</label><input name="role" type="tel">
+                </div>
+                <div class="row">
+                    <label>Linkedin:</label><input name="linkedin" type="text">
+                    <label>Github:</label><input name="github" type="text">
+                </div>
+            </fieldset>
+            <div class="row">
+                <button type="reset">
+                    Limpar
+                </button>
+                <button type="submit">
+                    Enviar Formulário
+                </button>
+            </div>
+        </form>
+    </body>
+</html>
